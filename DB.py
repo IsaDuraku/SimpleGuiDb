@@ -3,7 +3,7 @@ from tkinter import *
 
 
 def create():
-    conn = psycopg2.connect(dbname="studentdb",user="postgres",password="2458",host="localhost",port="5432")
+    conn = psycopg2.connect(dbname="studentdb",user="postgres",password="????",host="localhost",port="5432")
     cur = conn.cursor()
     cur.execute('''Create Table students(ID Serial, Name text,Age text,Address text);''')
     print("created")
@@ -11,7 +11,7 @@ def create():
     conn.close()
     
 def insert_data(name,age,address):
-    conn = psycopg2.connect(dbname="studentdb",user="postgres",password="2458",host="localhost",port="5432")
+    conn = psycopg2.connect(dbname="studentdb",user="postgres",password="????",host="localhost",port="5432")
     cur = conn.cursor()
     # name = input("Enter name: ")
     # age = input("Enter age: ")

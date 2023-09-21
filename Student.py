@@ -4,7 +4,7 @@ import tkinter as tk
 from DB import insert_data
 
 def search_id(ID):
-    conn = psycopg2.connect(dbname="studentdb",user="postgres",password="2458",host="localhost",port="5432")
+    conn = psycopg2.connect(dbname="studentdb",user="postgres",password="????",host="localhost",port="5432")
     cur = conn.cursor()
     query = '''select * from students where id=%s'''
     cur.execute(query,(ID))
