@@ -14,7 +14,7 @@ def search_id(ID):
     conn.close()
 
 def search_name(name):
-    conn = psycopg2.connect(dbname="studentdb",user="postgres",password="????,host="localhost",port="5432")
+    conn = psycopg2.connect(dbname="studentdb",user="postgres",password="????",host="localhost",port="5432")
     cur = conn.cursor()
     query = '''select * from students where name=%s'''
     cur.execute(query,(name,))
